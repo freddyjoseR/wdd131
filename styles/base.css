@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@300&display=swap');
+
+body {
+    max-width: 1800 px;
+    margin: 0 auto;
+}
+
+header h1 {
+    background-color: #21548d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+header nav {
+    background-color: #00162d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    font-size: 21px;
+    font-family: 'verdana', sans-serif;
+}
+
+main section {
+    border: 2px solid black;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cardAboutMe {
+    margin:10px 5px 10px 10px;
+    /* width: auto; */
+}
+
+.cardResources {
+    margin: 10px 10px 10px 5px;
+    /* width: auto; */
+}
+.cardAboutMe img{
+    width: 150px;
+    height: auto;
+}
