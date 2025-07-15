@@ -3,22 +3,25 @@ body {
     margin: 0 auto;
 }
 header h1 {
-    background-color: #21548d;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    background-color: #21548d;  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    /* border: solid 15px white; */
     margin: 0 auto;
+}
+
+#course-title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 header nav {
     background-color: #00162d;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding:10px;
 }
 
 header nav a{
@@ -27,6 +30,14 @@ header nav a{
     margin: auto;
     font-size: 21px;
     font-family: 'verdana', sans-serif;
+    /* border: 1px solid greenyellow; */
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: rgb(175, 207, 238);
+    color: black;
+    padding: 10px;
 }
 
 main {
@@ -35,6 +46,7 @@ main {
 
 }
 .cardAboutMe {
+    background-color: rgba(33, 166, 255, 0.066);
     margin: 15px 5px 15px 6em;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 10px;
@@ -79,6 +91,7 @@ main {
     font-weight: bold;
 }
 .cardResources {
+    background-color: rgba(33, 166, 255, 0.066);
     margin: 15px 0 15px 5px;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 10px;
