@@ -130,6 +130,7 @@ footer p {
     }
     #course-title {
         padding: 0rem 1rem;
+        font-size: 20px;
     }
     #menu {
         display: block;
@@ -181,7 +182,6 @@ footer p {
     #menu.show::before {
         content: "✖";
         font-size: x-large;
-        font-family: 'verdana', sans-serif;
     }
     .cardAboutMe,
     .cardResources {
