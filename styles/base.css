@@ -9,35 +9,36 @@ header h1 {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* border: solid 15px white; */
     margin: 0 auto;
 }
 
 #course-title {
+    padding: 0 1rem;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-header nav {
+.navigation {
     background-color: #00162d;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
 }
 
-header nav a{
+.navigation a, .navigation li{
     text-decoration: none;
+    list-style: none;
     color: white;
     margin: auto;
     font-size: 21px;
     font-family: 'verdana', sans-serif;
-    /* border: 1px solid greenyellow; */
-    padding: 10px;
+    padding: 15px;
 }
 
 header nav a:hover {
     background-color: rgb(175, 207, 238);
     color: black;
-    padding: 10px;
+    padding: 15px;
 }
 
 main {
@@ -127,13 +128,69 @@ footer p {
     main {
         display: block;
     }
+    #course-title {
+        padding: 0rem 1rem;
+    }
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        background-color: #eee;
+        color: #000;
+    }
 
+    #menu::before {
+        content: "≡";
+    }
+    .navigation {
+        background-color: rgba(33, 166, 255, 0.066);;
+        display: block;
+        list-style: none;
+        padding: 0%;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: white;
+        background-color: black;
+        padding: 0.75rem;
+    }
+
+    .show li {
+        display: block;
+        padding: 0%;
+    }
+
+    #menu.show::before {
+        content: "✖";
+        font-size: x-large;
+        font-family: 'verdana', sans-serif;
+    }
     .cardAboutMe,
     .cardResources {
         margin: 15px auto;
         width: 90%;
+        transition: 0.5s;
     }
     .cardResources ul {
         margin-top: 1em;
-    } 
+        transition: 0.5s;
+    }
 }
