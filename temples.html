@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Temples Album Activity</title>
+
+  <meta name="author" content="Freddy Rodriguez">
+  <meta name="description" content="Temple Album project for WDD 131 - Dynamic Web Fundamentals by Freddy Rodriguez.">
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 script-src 'self' https://cdnjs.cloudflare.com;
+                 style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+                 font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;400&display=swap" rel="stylesheet">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1><span id="main-title">Temple Album</span></h1>
+    <button id="menu" aria-label="Toggle Menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <section id="album">
+      <div> 
+        <img src="images/temples-photos/caracas_venezuela_temple.jpeg" alt="Caracas Venezuela Temple">
+        <p>Caracas, Venezuela</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/frankfurt_germany_temple_lds.jpeg" alt="Frankfurt Germany Temple">
+        <p>Frankfurt, Germany</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/mexico_city_temple_lds.jpeg" alt="Mexico City Temple">
+        <p>Mexico City, Mexico</p>
+      </div>        
+      <div> 
+        <img src="images/temples-photos/nauvoo_temple_lds.jpeg" alt="Nauvoo Temple">
+        <p>Nauvoo, Illinois, US</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/porto_alegre_brazil_temple_lds.jpeg" alt="Porto Alegre Temple">
+        <p>Porto Alegre, Brazil</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/suva_fiji_temple_lds.jpeg" alt="Suva Fiji Temple">
+        <p>Suva, Fiji</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple">
+        <p>Salt Lake City, Utah, US</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/seoul_korea_temple_lds.jpeg" alt="Seoul Korea Temple">
+        <p>Seoul, South Korea</p>
+      </div>
+      <div> 
+        <img src="images/temples-photos/reno_temple_lds.jpeg" alt="Reno Temple">
+        <p>Reno, Nevada, US</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> 🐧 Freddy Jose Rodriguez 🐧 Trujillo, Venezuela. All rights reserved.</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
