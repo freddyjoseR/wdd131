@@ -1,0 +1,83 @@
+@media (min-width: 620px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+
+    .hero {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+        #data,
+        #weather {
+            justify-content: flex-start;
+            width: 250px;
+            height: auto;
+            margin: 1rem auto;
+            border: var(--border);
+            position: relative;
+            padding: 4rem 1rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-icon {
+            position: absolute;
+            bottom: 16.5rem;
+            right: 5rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        .card-header {
+            text-align: left;
+            background-color: rgb(239, 65, 53);
+            color: white;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            padding-right: 9rem;
+            position: absolute;
+            left: -0.5rem;
+            top: -0.4rem;
+        }
+        #weather dl , #data dl {
+            font-size: 14px;
+            align-content: start;
+        }
+}
+
+@media (min-width: 1080px) {
+    #data {
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 130px;
+        left: 20px;
+        width: 300px;
+        z-index: 1000;
+    }
+
+    #weather {
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 100px;
+        right: 20px;
+        width: 300px;
+        z-index: 1000;
+    }
+
+    main {
+        display: block;
+    }
+    .floating-icon {
+        bottom: 8.5rem;
+        right: 9rem;
+    }
+}

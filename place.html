@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France: Beautiful coutry to visit - WDD 131 Activity</title>
+    
+    <meta name="description" content="This site contains basic information about France that is used to highlight the principles of web design learned throughout the course.">
+    <meta name="author" content="Freddy Rodriguez">
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+    <link rel="stylesheet" href="styles/place-base.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <h1>
+            <span id="country-title">France</span>
+        </h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture id="banner">
+                <source srcset="images/place/arc-de-triumphe-wide.webp" media="(min-width: 1080px)">
+                <source srcset="images/place/arc-de-triumphe-medium.webp" media="(min-width: 620px)">
+                <img src="images/place/gallery-small.webp" alt="France Famous Gallery Image" width="500" height="250">
+            </picture>
+        </div>    
+        <section id="data">
+            <h2 class="card-header">Data</h2>
+            <dl class="card-content">
+                <dt>Area:</dt>
+                <dd>632,702 sq km</dd>
+
+                <dt>Population:</dt>
+                <dd>68,606,000</dd>
+
+                <dt>Capital:</dt>
+                <dd>Paris</dd>
+
+                <dt>Languages:</dt>
+                <dd>French, Arabic (Maghrebi dialects)</dd>
+
+                <dt>Currency:</dt>
+                <dd>Euro (€)</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>UTC+01:00</dd>
+
+                <dt>Calling Code:</dt>
+                <dd>+33</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.fr</dd>
+            </dl>
+        </section>
+        <section id="weather">
+            <h2 class="card-header">Weather</h2>
+            <div class="floating-icon"><img src="images/Place/weather-icon.svg" alt="Weather Icon" width="55" height="55"></div>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temp">10 ºC</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Light Rain</dd>
+
+                <dt>Wind:</dt>
+                <dd id="wind">14 km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd id="windChill">Calculating...</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>🐧 Freddy Jose Rodriguez 🐧 Trujillo, Venezuela. All rights reserved.</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
