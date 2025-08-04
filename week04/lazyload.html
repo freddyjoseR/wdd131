@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Activity - WDD 131</title>
+
+    <meta name="author" content="Freddy Rodriguez">
+    <meta name="description" content="basic information about loading images when scroll to reduce loadtime">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Lazy Loading: Activity</h1></header>
+    <main>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1751257983922-a627088d4c21?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ideal Workspace" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1743360167520-761fa087ee8d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Man talking on the phone" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1745799326349-f14158d60a2c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="friends on the shore" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1745965864966-3196b945a046?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="woman walking on the beach" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1753973975182-6f15378aac7e?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="pink flowers on the field" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1750801321923-a93fd5e5bf21?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="woman runnign on the road" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>🐧 Freddy Jose Rodriguez 🐧 Trujillo, Venezuela. All rights reserved.</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

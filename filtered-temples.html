@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Temples Album Activity</title>
+
+  <meta name="author" content="Freddy Rodriguez">
+  <meta name="description" content="Temple Album project for WDD 131 - Dynamic Web Fundamentals by Freddy Rodriguez.">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1><span id="main-title">Temple Album</span></h1>
+    <button id="menu" aria-label="Toggle Menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" id="alltemples">Home</a></li>
+        <li><a href="#" id="oldtemples">Old</a></li>
+        <li><a href="#" id="newtemples">New</a></li>
+        <li><a href="#" id="largetemples">Large</a></li>
+        <li><a href="#" id="smalltemples">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div id="templeContainer"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> 🐧 Freddy Jose Rodriguez 🐧 Trujillo, Venezuela. All rights reserved.</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

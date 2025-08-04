@@ -1,0 +1,63 @@
+@media (min-width: 991px) {
+    body {
+        max-width: 1520px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        color: #21548d;
+        opacity: 80%;
+        background-color: #fff;
+        padding: 1.4rem 1rem 1.4rem 1rem ;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    #templeContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        max-width: 1000px;
+    }
+
+    
+}
+@media (min-width: 774px) and (max-width: 990px) {
+    main {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    #templeContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .temple-card  {
+        margin: 0.25rem;
+    }
+
+}
