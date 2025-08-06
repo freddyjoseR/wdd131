@@ -1,0 +1,145 @@
+body{
+    margin: 0 auto;
+}
+
+#logo {
+    width: 90px;
+    height: auto;
+}
+
+h1,
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+p,
+ul li {
+    font-family: "roboro", sans-serif;
+    font-size: 18px;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E4053;
+    color: #F4F6F7;
+}
+
+section {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #F4F6F7;
+    color: #2E4053;
+}
+
+#color-section {
+    background-color: white;
+    padding: 2rem auto;
+    border-top: 1px solid #2E4053;
+    border-bottom: 1px solid #2E4053;
+}
+
+#wireframes-section {
+    width: 80%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #fff;
+}
+
+#primary-color {
+    color: #F4F6F7;
+    background-color: #2E4053;
+    padding: 10px;
+    margin: 1.5rem;
+}
+
+#secondary-color {
+    color: #2E4053;
+    background-color: #F4F6F7;
+    padding: 10px;
+    margin: 1.5rem;
+}
+
+#wireframes-section {
+    display: block;
+}
+
+
+#wireframes-section h2 {
+    text-align: center;
+}
+
+#mobile-grid,
+#desktop-grid {
+    text-align: center;
+}
+
+#mobile-wireframe {
+    width: 25%;
+    height: auto;
+    border: 1px solid black;
+}
+
+#desktop-wireframe {
+    width: 60%;
+    height: auto;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #2E4053;
+    color: #F4F6F7;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    margin: 0.4rem;
+}
+
+@media(min-width:1040px) {
+    #wireframes-section {
+        display: grid;
+        grid-template-columns: auto 1fe;
+        grid-template-rows: auto auto;
+    }
+
+    #wireframes-section h2 {
+            text-align: center;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+    
+        #mobile-wireframe {
+            width: 200px;
+            height: auto;
+            border: 1px solid black;
+        }
+    
+        #desktop-wireframe {
+            width: 500px;
+            height: auto;
+            border: 1px solid black;
+        }
+    
+        #mobile-grid {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        #desktop-grid {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin: 0 auto;
+            text-align: center;
+        }
+}
