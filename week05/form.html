@@ -8,11 +8,12 @@
     <meta name="author" content="Freddy Rodriguez">
     <meta name="description" content="Page for creating user product review">
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
+    <link rel="preload" href="styles/form.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/form.css"></noscript>
 </head>
 <body>
     <header>
@@ -33,28 +34,27 @@
                 <label><span class="stars">⭐⭐⭐</span><input type="radio" name="rating" value="3"></label>
                 <label><span class="stars">⭐⭐⭐⭐</span><input type="radio" name="rating" value="4"></label>
                 <label><span class="stars">⭐⭐⭐⭐⭐</span><input type="radio" name="rating" value="5"></label>
-
-                </div>
             </fieldset>
 
             <fieldset class="checkbox">
                 <legend>Date of Installation</legend>
-                 <input type="date" name="installDate" required>
-
-            
-                <div>Which features did you find Useful in the product? <br>(Check all that apply)</div>
-                <label><input type="checkbox" name="feautures" value="Design">Design</label>
-                <label><input type="checkbox" name="feautures" value="Durability">Durability</label>
-                <label><input type="checkbox" name="feautures" value="Easy">Ease of Use</label>
-                <label><input type="checkbox" name="feautures" value="Performance">Performance</label>
+                <label for="installDate">Select installation date</label>
+                <input type="date" id="installDate" name="installDate" required>
 
             </fieldset>
-            
-            
-            <label class="textEntry">Written Review (Optional)</label>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
+                <label for="featureDesign"><input type="checkbox" id="featureDesign" name="features" value="Design"> Design</label>
+                <label for="featureDurability"><input type="checkbox" id="featureDurability" name="features" value="Durability"> Durability</label>
+                <label for="featureEase"><input type="checkbox" id="featureEase" name="features" value="Easy"> Ease of Use</label>
+                <label for="featurePerformance"><input type="checkbox" id="featurePerformance" name="features" value="Performance"> Performance</label>
+            </fieldset>
+
+            <label for="reviewText" class="textEntry">Written Review (Optional)</label>
             <textarea name="reviewText" id="reviewText" rows="6" placeholder="Write your review here..."></textarea>
 
-            <label class="userName">Your Name (Optional)</label>
+            <label for="userName" class="userName">Your Name (Optional)</label>
             <input type="text" name="userName" id="userName">
 
             <input type="submit" value="Post Review">
@@ -66,6 +66,6 @@
         <p>&copy; <span id="currentYear"></span>🐧 Freddy Jose Rodriguez 🐧 Trujillo, Venezuela. All rights reserved.</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
