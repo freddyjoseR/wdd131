@@ -11,73 +11,61 @@
         <!-- Author insof and site description -->
        
         <meta name="description" content="This website contains many of the basic principles of web development from the course WDD 131 - Dynamic Web Fundamentals. The code was written by Freddy Rodriguez.">
-      
-        <!-- Content Security Policy (CSP)
-        <meta http-equiv="Content-Security-Policy"
-              content="default-src 'self';
-                       script-src 'self' https://cdnjs.cloudflare.com;
-                       style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
-                       font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;"> -->
-      
-        <!-- 🚀 CSS own styles -->
-        <link rel="stylesheet" href="styles/base.css">
-      
-        <!-- ⚡ Performance Optimization: Preconnect Connections -->
-      
-        <!-- Preconnect to Google Fonts (to load faster) -->
+        
+        <!-- Google Fonts: Poppins and Inter -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      
-        <!-- DNS prefetch (resolve domains before needing them) -->
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-      
-        <!-- 💬 Google fonts used in the CSS -->
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@300&family=Montserrat&display=swap" rel="stylesheet">
-      
-        <!-- 🎨 Font Awesome (icons) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <!-- 🚀 CSS own styles -->
+        <link rel="stylesheet" href="styles/base.css">
+            
         <!-- 🧠 JavaScript con defer (no bloquea carga del HTML) -->
         <script src="scripts/getdates.js" defer></script>
         <script src="scripts/menu.js" defer></script>
       </head>
 <body>
     <header>
+        <div id="icon-div">
+            <a href="index.html">
+                <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20,16 8,32 20,48" />
+                    <line x1="37" y1="16" x2="29" y2="48" />
+                    <polyline points="44,16 56,32 44,48" />
+                </svg>
+            </a>
+        </div>
         <h1>
-            <span id="course-title">WDD 131 - Dynamic Web Fundamentals | Freddy Rodriguez</span>
+            <span id="course-title">WDD 131 - Dynamic Web <br>Fundamentals | Freddy Rodriguez</span>
         </h1>
-        <a id="menu" href="#"></a>
+        <button class="hamburger" aria-label="menu">
+            &#9776;
+
+        </button>
         <nav>
             <ul class="navigation">
-                <li><a href="https://www.linkedin.com/in/freddy-rodr%C3%ADguez-28a2b8223/">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=eng#:~:text=77%20O%20Lord,Amen%2C%20and%20Amen.">Scripture</a></li>
-                <li><a href="index.html">Final Project</a></li>
+                <li><a href="index.html" id="active-page">Home</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
            </ul>
         </nav>
     </header>
     <main>
-        <div class="cardAboutMe">
+        <div class="hero-img"><img src="images/imagen2.png" alt="My Photo"></div>
+        <div id="hero-message">
+            <h2>I'm Freddy, a <br>Web Developer</h2>
+            <p>I build websites that grow your <br>business and engage your audience</p>
+        </div>
+        <div class="about">
             <h2>About Me</h2>
             <section>
                 <p>My name is Freddy Rodriguez. I was born and raised in Venezuela and live with my wife in Trujillo, an Andean state. I'm currently working 
                     as a financial analyst and part of the customer service team of the agency. My wife and I love spending time together and 
                     with our relatives ones. We love traveling, dancing, singing, and watching series and movies.</p>
-                <img src="images/Myphoto.jpg" alt="My Photo">
+                
                 <h3>Guanare, Portuguesa, Venezuela</h3>
             </section>
-        </div>
-        <div class="cardResources">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li>Dev.to Community</li>
-                <li>Smashing Magazine</li>
-                <li>MDM Web Docs</li>
-                <li>W3 Schools</li>
-                <li>Udemy</li>
-                <li>Images Place Holder</li>
-            </ul>
         </div>
     </main>
     <footer>
